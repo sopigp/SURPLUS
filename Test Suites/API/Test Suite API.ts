@@ -15,14 +15,14 @@
       <guid>bbfbe796-5efe-418f-9fd4-f91ccce3b8e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Create New Post</testCaseId>
+      <testCaseId>Test Cases/API - Create New Post</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>9558e5cb-4e76-4588-a6a7-e75119c82747</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Get All Post</testCaseId>
+      <testCaseId>Test Cases/API - Get All Post</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
