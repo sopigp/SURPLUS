@@ -20,6 +20,6 @@ import groovy.json.JsonSlurper as JsonSlurper
 
 response1 = WS.sendRequestAndVerify(findTestObject('API OBJECTS/Get All Post', [('url') : GlobalVariable.url]))
 
-System.out.println(response1)
+//System.out.println(response1)
 
 
