@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Negative Case Mobile - Register - Email has been taken</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>abebce27-ddee-49a5-9692-49630812816c</testCaseGuid>
+</TestCaseEntity>

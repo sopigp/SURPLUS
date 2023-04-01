@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Mobile - Login - Invalid Email</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d918b65e-23e1-45f0-98b7-d26717e6a286</testCaseGuid>
+</TestCaseEntity>

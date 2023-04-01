@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Negative Case Mobile - Register - Empty Value</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a6cc12e7-c216-44bc-b451-d5a8df8dad6a</testCaseGuid>
+</TestCaseEntity>
