@@ -33,4 +33,26 @@ WS.verifyElementPropertyValue(response, 'id', '101')
 
 WS.verifyResponseStatusCode(response, 201)
 
+def response = '{"title": "Pentingnya Pendidikan Untuk Tingkatkan Kualitas Hidup", "body": "Pendidikan yang baik tentu saja sangat besar manfaatnya bagi kehidupan seseorang. Dan ada juga pepatah “tuntutlah ilmu setinggi langit” artinya kita harus belajar setinggi-tingginya untuk meningkatkan ajang kualitas hidup meski di rumah saja.", "userId": 100, "id": 101}'
+
+def expectedTitle = 'Pentingnya Pendidikan Untuk Tingkatkan Kualitas Hidup'
+
+def expectedBody = 'Pendidikan yang baik tentu saja sangat besar manfaatnya bagi kehidupan seseorang. Dan ada juga pepatah “tuntutlah ilmu setinggi langit” artinya kita harus belajar setinggi-tingginya untuk meningkatkan ajang kualitas hidup meski di rumah saja.'
+
+def expectedUserId = 100
+
+def expectedId = 101
+
+def jsonSlurper = new JsonSlurper()
+
+def jsonResponse = jsonSlurper.parseText(response)
+
+assert expectedTitle == jsonResponse.title
+
+assert expectedBody == jsonResponse.body
+
+assert expectedUserId == jsonResponse.userId
+
+assert expectedId == jsonResponse.id
+
 

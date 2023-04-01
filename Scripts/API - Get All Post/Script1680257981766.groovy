@@ -18,8 +18,21 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
 
-response1 = WS.sendRequestAndVerify(findTestObject('API OBJECTS/Get All Post', [('url') : GlobalVariable.url]))
+def response = WS.sendRequestAndVerify(findTestObject('API OBJECTS/Get All Post', [('url') : GlobalVariable.url]))
 
-//System.out.println(response1)
+System.out.println(response)
+
+// Parsing respons API ke dalam format JSON
+def jsonResponse = new JsonSlurper().parseText(response.getResponseText())
+
+// Memverifikasi tipe data setiap nilai pada objek JSON
+jsonResponse.each { item ->
+	assert item.userId instanceof Integer
+	assert item.id instanceof Integer
+	assert item.title instanceof String
+	assert item.body instanceof String
+}
+
+WS.verifyResponseStatusCode(response, 200)
 
 
