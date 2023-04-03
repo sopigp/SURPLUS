@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test Suite API" time="12.518" tests="2" failures="0" errors="0">
+   <testsuite name="Test Suite API" tests="2" failures="0" errors="0" time="12.518" skipped="0" timestamp="2023-04-01 13:56:16" hostname="asus - LAPTOP-LUVALEJ3" id="Test Suites/API/Test Suite API">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\JOB SEEKER\\SURPLUS\\Automation Script\\Reports\\20230401_135555\\API\\Test Suite API\\20230401_135555"/>
+         <property name="logFiles" value="D:\\JOB SEEKER\\SURPLUS\\Automation Script\\Reports\\20230401_135555\\API\\Test Suite API\\20230401_135555\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="asus - LAPTOP-LUVALEJ3"/>
+         <property name="hostAddress" value="172.20.10.3"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.4.0.208"/>
+      </properties>
+      <testcase name="Test Cases/API - Create New Post" time="9.308" classname="Test Cases/API - Create New Post" status="PASSED">
+         <system-out><![CDATA[2023-04-01 13:56:17 - [TEST_CASE][PASSED] - Test Cases/API - Create New Post: Test Cases/API - Create New Post
+
+2023-04-01 13:56:19 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("API OBJECTS/Create New Post", ["url":url, "title":title, "body":body, "userId":userId])): Send request and verify the response successfully
+
+2023-04-01 13:56:25 - [MESSAGE][INFO] - HAR: D:\JOB SEEKER\SURPLUS\Automation Script\Reports\20230401_135555\API\Test Suite API\20230401_135555\requests\main\0.har
+
+2023-04-01 13:56:26 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2023-04-01 13:56:26 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2023-04-01 13:56:26 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2023-04-01 13:56:26 - [MESSAGE][PASSED] - Verify response successfully
+
+2023-04-01 13:56:26 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2023-04-01 13:56:26 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2023-04-01 13:56:26 - [TEST_STEP][PASSED] - out.println(response): null
+
+2023-04-01 13:56:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "title", title): Verify element property value successfully
+
+2023-04-01 13:56:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-04-01 13:56:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "body", body): Verify element property value successfully
+
+2023-04-01 13:56:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-04-01 13:56:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "userId", userId): Verify element property value successfully
+
+2023-04-01 13:56:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-04-01 13:56:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "id", "101"): Verify element property value successfully
+
+2023-04-01 13:56:27 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-04-01 13:56:27 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+2023-04-01 13:56:27 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-04-01 13:56:27 - [TEST_STEP][PASSED] - response = "{"title": "Pentingnya Pendidikan Untuk Tingkatkan Kualitas Hidup", "body": "Pendidikan yang baik tentu saja sangat besar manfaatnya bagi kehidupan seseorang. Dan ada juga pepatah “tuntutlah ilmu setinggi langit” artinya kita harus belajar setinggi-tingginya untuk meningkatkan ajang kualitas hidup meski di rumah saja.", "userId": 100, "id": 101}": null
+
+2023-04-01 13:56:27 - [TEST_STEP][PASSED] - expectedTitle = "Pentingnya Pendidikan Untuk Tingkatkan Kualitas Hidup": null
+
+2023-04-01 13:56:27 - [TEST_STEP][PASSED] - expectedBody = "Pendidikan yang baik tentu saja sangat besar manfaatnya bagi kehidupan seseorang. Dan ada juga pepatah “tuntutlah ilmu setinggi langit” artinya kita harus belajar setinggi-tingginya untuk meningkatkan ajang kualitas hidup meski di rumah saja.": null
+
+2023-04-01 13:56:27 - [TEST_STEP][PASSED] - expectedUserId = 100: null
+
+2023-04-01 13:56:27 - [TEST_STEP][PASSED] - expectedId = 101: null
+
+2023-04-01 13:56:27 - [TEST_STEP][PASSED] - jsonSlurper = new groovy.json.JsonSlurper(): null
+
+2023-04-01 13:56:27 - [TEST_STEP][PASSED] - jsonResponse = jsonSlurper.parseText(response): null
+
+2023-04-01 13:56:27 - [TEST_STEP][PASSED] - assert expectedTitle == title: null
+
+2023-04-01 13:56:27 - [TEST_STEP][PASSED] - assert expectedBody == body: null
+
+2023-04-01 13:56:27 - [TEST_STEP][PASSED] - assert expectedUserId == userId: null
+
+2023-04-01 13:56:27 - [TEST_STEP][PASSED] - assert expectedId == id: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/API - Get All Post" time="2.096" classname="Test Cases/API - Get All Post" status="PASSED">
+         <system-out><![CDATA[2023-04-01 13:56:27 - [TEST_CASE][PASSED] - Test Cases/API - Get All Post: Test Cases/API - Get All Post
+
+2023-04-01 13:56:27 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("API OBJECTS/Get All Post", ["url":url])): Send request and verify the response successfully
+
+2023-04-01 13:56:28 - [MESSAGE][INFO] - HAR: D:\JOB SEEKER\SURPLUS\Automation Script\Reports\20230401_135555\API\Test Suite API\20230401_135555\requests\main\1.har
+
+2023-04-01 13:56:28 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2023-04-01 13:56:29 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2023-04-01 13:56:29 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2023-04-01 13:56:29 - [MESSAGE][PASSED] - Verify response successfully
+
+2023-04-01 13:56:29 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2023-04-01 13:56:29 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2023-04-01 13:56:29 - [TEST_STEP][PASSED] - out.println(response): null
+
+2023-04-01 13:56:29 - [TEST_STEP][PASSED] - jsonResponse = JsonSlurper().parseText(response.getResponseText()): null
+
+2023-04-01 13:56:29 - [TEST_STEP][PASSED] - jsonResponse.each({ java.lang.Object item -> ... }): null
+
+2023-04-01 13:56:29 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2023-04-01 13:56:29 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-04-01 13:56:16 - [TEST_SUITE][PASSED] - Test Suite API: Test Cases/API - Get All Post]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

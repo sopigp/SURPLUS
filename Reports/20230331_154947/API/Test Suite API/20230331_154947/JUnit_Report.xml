@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test Suite API" time="4.244" tests="2" failures="0" errors="0">
+   <testsuite name="Test Suite API" tests="2" failures="0" errors="0" time="4.244" skipped="0" timestamp="2023-03-31 15:49:56" hostname="asus - LAPTOP-LUVALEJ3" id="Test Suites/API/Test Suite API">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\JOB SEEKER\\SURPLUS\\Automation Script\\Reports\\20230331_154947\\API\\Test Suite API\\20230331_154947"/>
+         <property name="logFiles" value="D:\\JOB SEEKER\\SURPLUS\\Automation Script\\Reports\\20230331_154947\\API\\Test Suite API\\20230331_154947\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="asus - LAPTOP-LUVALEJ3"/>
+         <property name="hostAddress" value="192.168.1.5"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.4.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Create New Post" time="3.461" classname="Test Cases/Create New Post" status="PASSED">
+         <system-out><![CDATA[2023-03-31 15:49:57 - [TEST_CASE][PASSED] - Test Cases/Create New Post: Test Cases/Create New Post
+
+2023-03-31 15:49:57 - [TEST_STEP][PASSED] - response = sendRequestAndVerify(findTestObject("API OBJECTS/Create New Post", ["url":url, "title":title, "body":body, "userId":userId])): Send request and verify the response successfully
+
+2023-03-31 15:49:59 - [MESSAGE][INFO] - HAR: D:\JOB SEEKER\SURPLUS\Automation Script\Reports\20230331_154947\API\Test Suite API\20230331_154947\requests\main\0.har
+
+2023-03-31 15:50:00 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2023-03-31 15:50:00 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2023-03-31 15:50:00 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2023-03-31 15:50:00 - [MESSAGE][PASSED] - Verify response successfully
+
+2023-03-31 15:50:00 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2023-03-31 15:50:00 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2023-03-31 15:50:00 - [TEST_STEP][PASSED] - out.println(response): null
+
+2023-03-31 15:50:00 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "title", title): Verify element property value successfully
+
+2023-03-31 15:50:00 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-03-31 15:50:00 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "body", body): Verify element property value successfully
+
+2023-03-31 15:50:00 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-03-31 15:50:00 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "userId", userId): Verify element property value successfully
+
+2023-03-31 15:50:00 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-03-31 15:50:00 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "id", "101"): Verify element property value successfully
+
+2023-03-31 15:50:00 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-03-31 15:50:00 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+2023-03-31 15:50:00 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Get All Post" time="0.515" classname="Test Cases/Get All Post" status="PASSED">
+         <system-out><![CDATA[2023-03-31 15:50:00 - [TEST_CASE][PASSED] - Test Cases/Get All Post: Test Cases/Get All Post
+
+2023-03-31 15:50:00 - [TEST_STEP][PASSED] - response1 = sendRequestAndVerify(findTestObject("API OBJECTS/Get All Post", ["url":url])): Send request and verify the response successfully
+
+2023-03-31 15:50:00 - [MESSAGE][INFO] - HAR: D:\JOB SEEKER\SURPLUS\Automation Script\Reports\20230331_154947\API\Test Suite API\20230331_154947\requests\main\1.har
+
+2023-03-31 15:50:00 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2023-03-31 15:50:01 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2023-03-31 15:50:01 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2023-03-31 15:50:01 - [MESSAGE][PASSED] - Verify response successfully
+
+2023-03-31 15:50:01 - [MESSAGE][PASSED] - All validation steps have been passed
+
+2023-03-31 15:50:01 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2023-03-31 15:50:01 - [TEST_STEP][PASSED] - out.println(response1): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-03-31 15:49:56 - [TEST_SUITE][PASSED] - Test Suite API: Test Cases/Get All Post]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

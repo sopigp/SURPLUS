@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test Suite Mobile" time="68.477" tests="2" failures="0" errors="0">
+   <testsuite name="Test Suite Mobile" tests="2" failures="0" errors="0" time="68.477" skipped="0" timestamp="2023-04-01 09:11:38" hostname="asus - LAPTOP-LUVALEJ3" id="Test Suites/Mobile/Test Suite Mobile">
+      <properties>
+         <property name="deviceName" value="emulator-5554 (AOSP on IA Emulator - Android 9)"/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\JOB SEEKER\\SURPLUS\\Automation Script\\Reports\\20230401_091124\\Mobile\\Test Suite Mobile\\20230401_091124"/>
+         <property name="logFiles" value="D:\\JOB SEEKER\\SURPLUS\\Automation Script\\Reports\\20230401_091124\\Mobile\\Test Suite Mobile\\20230401_091124\\appium.log, D:\\JOB SEEKER\\SURPLUS\\Automation Script\\Reports\\20230401_091124\\Mobile\\Test Suite Mobile\\20230401_091124\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="asus - LAPTOP-LUVALEJ3"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="appiumServerStatus" value="{&quot;value&quot;:{&quot;build&quot;:{&quot;version&quot;:&quot;1.22.3&quot;}},&quot;sessionId&quot;:null,&quot;status&quot;:0}"/>
+         <property name="katalonVersion" value="8.4.0.208"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="appiumVersion" value="1.22.3"/>
+         <property name="deviceModel" value="AOSP on IA Emulator"/>
+         <property name="hostAddress" value="192.168.1.5"/>
+         <property name="deviceManufacturer" value="Google"/>
+         <property name="deviceId" value="emulator-5554"/>
+         <property name="deviceName" value="emulator-5554 (AOSP on IA Emulator - Android 9)"/>
+         <property name="deviceOSVersion" value="9"/>
+      </properties>
+      <testcase name="Test Cases/Mobile - Register" time="44.3" classname="Test Cases/Mobile - Register" status="PASSED">
+         <system-out><![CDATA[2023-04-01 09:11:38 - [TEST_CASE][PASSED] - Test Cases/Mobile - Register: Test Cases/Mobile - Register
+
+2023-04-01 09:11:39 - [TEST_STEP][PASSED] - faker = new com.github.javafaker.Faker(): null
+
+2023-04-01 09:11:39 - [TEST_STEP][PASSED] - firstName = name().firstName(): null
+
+2023-04-01 09:11:39 - [TEST_STEP][PASSED] - name = firstName: null
+
+2023-04-01 09:11:40 - [TEST_STEP][PASSED] - email = surplusKeywords.RandomEmail.getEmail("emailUser", "gmail.com"): surplusKeywords.RandomEmail.getEmail is PASSED
+
+2023-04-01 09:11:40 - [MESSAGE][PASSED] - surplusKeywords.RandomEmail.getEmail is PASSED
+
+2023-04-01 09:11:40 - [TEST_STEP][PASSED] - email = email: null
+
+2023-04-01 09:11:40 - [TEST_STEP][PASSED] - out.println(email): null
+
+2023-04-01 09:11:40 - [TEST_STEP][PASSED] - currentRelativePath = Paths.get(""): null
+
+2023-04-01 09:11:40 - [TEST_STEP][PASSED] - s = toAbsolutePath().toString(): null
+
+2023-04-01 09:11:40 - [TEST_STEP][PASSED] - out.println("Current absolute path is: " + s): null
+
+2023-04-01 09:11:40 - [TEST_STEP][PASSED] - s = s + "\Data Files\APK Android\SampleAndroidApp-LoginTes_4.0_Apkpure.apk": null
+
+2023-04-01 09:11:40 - [TEST_STEP][PASSED] - out.println("Current absolute path is: " + s): null
+
+2023-04-01 09:11:40 - [TEST_STEP][PASSED] - startApplication(s, false): Started app at: 'D:\JOB SEEKER\SURPLUS\Automation Script\Data Files\APK Android\SampleAndroidApp-LoginTes_4.0_Apkpure.apk'
+
+2023-04-01 09:11:41 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+2023-04-01 09:11:45 - [MESSAGE][INFO] - Appium server started on port 60,711
+
+2023-04-01 09:12:09 - [MESSAGE][PASSED] - Started app at: 'D:\JOB SEEKER\SURPLUS\Automation Script\Data Files\APK Android\SampleAndroidApp-LoginTes_4.0_Apkpure.apk'
+
+2023-04-01 09:12:09 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2023-04-01 09:12:14 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2023-04-01 09:12:14 - [TEST_STEP][PASSED] - tap(findTestObject("MOBILE OBJECT/Register/lbl_createAccount"), 10): Tapped on element 'Object Repository/MOBILE OBJECT/Register/lbl_createAccount'
+
+2023-04-01 09:12:15 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/MOBILE OBJECT/Register/lbl_createAccount'
+
+2023-04-01 09:12:15 - [TEST_STEP][PASSED] - setText(findTestObject("MOBILE OBJECT/Register/txt_add_name"), name, 10): Text 'Bong' has been set to element 'Object Repository/MOBILE OBJECT/Register/txt_add_name'
+
+2023-04-01 09:12:17 - [MESSAGE][PASSED] - Text 'Bong' has been set to element 'Object Repository/MOBILE OBJECT/Register/txt_add_name'
+
+2023-04-01 09:12:17 - [TEST_STEP][PASSED] - setText(findTestObject("MOBILE OBJECT/Register/txt_add_email"), email, 10): Text 'emailUser319@gmail.com' has been set to element 'Object Repository/MOBILE OBJECT/Register/txt_add_email'
+
+2023-04-01 09:12:18 - [MESSAGE][PASSED] - Text 'emailUser319@gmail.com' has been set to element 'Object Repository/MOBILE OBJECT/Register/txt_add_email'
+
+2023-04-01 09:12:18 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("MOBILE OBJECT/Register/txt_add_password"), "7ZTatM+q3vAyZQd2ps7zRg==", 10): Encrypted text '7ZTatM+q3vAyZQd2ps7zRg==' has been set to element 'Object Repository/MOBILE OBJECT/Register/txt_add_password'
+
+2023-04-01 09:12:20 - [MESSAGE][PASSED] - Encrypted text '7ZTatM+q3vAyZQd2ps7zRg==' has been set to element 'Object Repository/MOBILE OBJECT/Register/txt_add_password'
+
+2023-04-01 09:12:20 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("MOBILE OBJECT/Register/txt_add_confirmPassword"), "7ZTatM+q3vAyZQd2ps7zRg==", 10): Encrypted text '7ZTatM+q3vAyZQd2ps7zRg==' has been set to element 'Object Repository/MOBILE OBJECT/Register/txt_add_confirmPassword'
+
+2023-04-01 09:12:21 - [MESSAGE][PASSED] - Encrypted text '7ZTatM+q3vAyZQd2ps7zRg==' has been set to element 'Object Repository/MOBILE OBJECT/Register/txt_add_confirmPassword'
+
+2023-04-01 09:12:21 - [TEST_STEP][PASSED] - tap(findTestObject("MOBILE OBJECT/Register/btn_register"), 10): Tapped on element 'Object Repository/MOBILE OBJECT/Register/btn_register'
+
+2023-04-01 09:12:22 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/MOBILE OBJECT/Register/btn_register'
+
+2023-04-01 09:12:22 - [TEST_STEP][PASSED] - pressBack(): Press back button successfully
+
+2023-04-01 09:12:23 - [MESSAGE][PASSED] - Press back button successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Mobile - Login" time="23.604" classname="Test Cases/Mobile - Login" status="PASSED">
+         <system-out><![CDATA[2023-04-01 09:12:23 - [TEST_CASE][PASSED] - Test Cases/Mobile - Login: Test Cases/Mobile - Login
+
+2023-04-01 09:12:24 - [TEST_STEP][PASSED] - faker = new com.github.javafaker.Faker(): null
+
+2023-04-01 09:12:24 - [TEST_STEP][PASSED] - firstName = name().firstName(): null
+
+2023-04-01 09:12:24 - [TEST_STEP][PASSED] - name = firstName: null
+
+2023-04-01 09:12:24 - [TEST_STEP][PASSED] - email = surplusKeywords.RandomEmail.getEmail("emailUser", "gmail.com"): surplusKeywords.RandomEmail.getEmail is PASSED
+
+2023-04-01 09:12:24 - [MESSAGE][PASSED] - surplusKeywords.RandomEmail.getEmail is PASSED
+
+2023-04-01 09:12:24 - [TEST_STEP][PASSED] - email = email: null
+
+2023-04-01 09:12:24 - [TEST_STEP][PASSED] - out.println(email): null
+
+2023-04-01 09:12:24 - [TEST_STEP][PASSED] - currentRelativePath = Paths.get(""): null
+
+2023-04-01 09:12:24 - [TEST_STEP][PASSED] - s = toAbsolutePath().toString(): null
+
+2023-04-01 09:12:24 - [TEST_STEP][PASSED] - out.println("Current absolute path is: " + s): null
+
+2023-04-01 09:12:24 - [TEST_STEP][PASSED] - s = s + "\Data Files\APK Android\SampleAndroidApp-LoginTes_4.0_Apkpure.apk": null
+
+2023-04-01 09:12:24 - [TEST_STEP][PASSED] - out.println("Current absolute path is: " + s): null
+
+2023-04-01 09:12:24 - [TEST_STEP][PASSED] - startApplication(s, false): Started app at: 'D:\JOB SEEKER\SURPLUS\Automation Script\Data Files\APK Android\SampleAndroidApp-LoginTes_4.0_Apkpure.apk'
+
+2023-04-01 09:12:38 - [MESSAGE][PASSED] - Started app at: 'D:\JOB SEEKER\SURPLUS\Automation Script\Data Files\APK Android\SampleAndroidApp-LoginTes_4.0_Apkpure.apk'
+
+2023-04-01 09:12:38 - [TEST_STEP][PASSED] - delay(5, STOP_ON_FAILURE): Delayed 5 second(s)
+
+2023-04-01 09:12:43 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2023-04-01 09:12:43 - [TEST_STEP][PASSED] - setText(findTestObject("MOBILE OBJECT/Register/txt_add_email"), email_real_mobile, 10): Text 'sopigp@gmail.com' has been set to element 'Object Repository/MOBILE OBJECT/Register/txt_add_email'
+
+2023-04-01 09:12:44 - [MESSAGE][PASSED] - Text 'sopigp@gmail.com' has been set to element 'Object Repository/MOBILE OBJECT/Register/txt_add_email'
+
+2023-04-01 09:12:44 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("MOBILE OBJECT/Register/txt_add_password"), "7ZTatM+q3vAyZQd2ps7zRg==", 10): Encrypted text '7ZTatM+q3vAyZQd2ps7zRg==' has been set to element 'Object Repository/MOBILE OBJECT/Register/txt_add_password'
+
+2023-04-01 09:12:45 - [MESSAGE][PASSED] - Encrypted text '7ZTatM+q3vAyZQd2ps7zRg==' has been set to element 'Object Repository/MOBILE OBJECT/Register/txt_add_password'
+
+2023-04-01 09:12:45 - [TEST_STEP][PASSED] - tap(findTestObject("MOBILE OBJECT/Login/btn_login"), 10): Tapped on element 'Object Repository/MOBILE OBJECT/Login/btn_login'
+
+2023-04-01 09:12:46 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/MOBILE OBJECT/Login/btn_login']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-04-01 09:11:38 - [TEST_SUITE][PASSED] - Test Suite Mobile: Test Cases/Mobile - Login]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

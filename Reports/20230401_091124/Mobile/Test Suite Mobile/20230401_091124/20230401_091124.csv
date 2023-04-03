@@ -1,0 +1,42 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test Suite Mobile,,,,2023-04-01 09:11:38,2023-04-01 09:12:46,1m - 8.477s,PASSED
+,,,,,,,
+Test Cases/Mobile - Register,,,,2023-04-01 09:11:38,2023-04-01 09:12:23,44.300s,PASSED
+faker = new com.github.javafaker.Faker(),,,,2023-04-01 09:11:39,2023-04-01 09:11:39,0.027s,PASSED
+firstName = name().firstName(),,,,2023-04-01 09:11:39,2023-04-01 09:11:39,0.219s,PASSED
+name = firstName,,,,2023-04-01 09:11:39,2023-04-01 09:11:40,0.363s,PASSED
+"email = surplusKeywords.RandomEmail.getEmail(""emailUser"", ""gmail.com"")",,,,2023-04-01 09:11:40,2023-04-01 09:11:40,0.044s,PASSED
+email = email,,,,2023-04-01 09:11:40,2023-04-01 09:11:40,0.003s,PASSED
+out.println(email),,,,2023-04-01 09:11:40,2023-04-01 09:11:40,0.029s,PASSED
+"currentRelativePath = Paths.get("""")",,,,2023-04-01 09:11:40,2023-04-01 09:11:40,0.015s,PASSED
+s = toAbsolutePath().toString(),,,,2023-04-01 09:11:40,2023-04-01 09:11:40,0.030s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 09:11:40,2023-04-01 09:11:40,0.001s,PASSED
+"s = s + ""\Data Files\APK Android\SampleAndroidApp-LoginTes_4.0_Apkpure.apk""",,,,2023-04-01 09:11:40,2023-04-01 09:11:40,0.004s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 09:11:40,2023-04-01 09:11:40,0.002s,PASSED
+"startApplication(s, false)",,,,2023-04-01 09:11:40,2023-04-01 09:12:09,29.020s,PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-04-01 09:12:09,2023-04-01 09:12:14,5.092s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/lbl_createAccount""), 10)",,,,2023-04-01 09:12:14,2023-04-01 09:12:15,1.346s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_name""), name, 10)",,,,2023-04-01 09:12:15,2023-04-01 09:12:17,1.630s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_email""), email, 10)",,,,2023-04-01 09:12:17,2023-04-01 09:12:18,1.272s,PASSED
+"setEncryptedText(findTestObject(""MOBILE OBJECT/Register/txt_add_password""), ""7ZTatM+q3vAyZQd2ps7zRg=="", 10)",,,,2023-04-01 09:12:18,2023-04-01 09:12:20,1.338s,PASSED
+"setEncryptedText(findTestObject(""MOBILE OBJECT/Register/txt_add_confirmPassword""), ""7ZTatM+q3vAyZQd2ps7zRg=="", 10)",,,,2023-04-01 09:12:20,2023-04-01 09:12:21,1.368s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/btn_register""), 10)",,,,2023-04-01 09:12:21,2023-04-01 09:12:22,0.751s,PASSED
+pressBack(),,,,2023-04-01 09:12:22,2023-04-01 09:12:23,0.769s,PASSED
+,,,,,,,
+Test Cases/Mobile - Login,,,,2023-04-01 09:12:23,2023-04-01 09:12:46,23.604s,PASSED
+faker = new com.github.javafaker.Faker(),,,,2023-04-01 09:12:24,2023-04-01 09:12:24,0.005s,PASSED
+firstName = name().firstName(),,,,2023-04-01 09:12:24,2023-04-01 09:12:24,0.257s,PASSED
+name = firstName,,,,2023-04-01 09:12:24,2023-04-01 09:12:24,0.001s,PASSED
+"email = surplusKeywords.RandomEmail.getEmail(""emailUser"", ""gmail.com"")",,,,2023-04-01 09:12:24,2023-04-01 09:12:24,0.108s,PASSED
+email = email,,,,2023-04-01 09:12:24,2023-04-01 09:12:24,0.002s,PASSED
+out.println(email),,,,2023-04-01 09:12:24,2023-04-01 09:12:24,0.052s,PASSED
+"currentRelativePath = Paths.get("""")",,,,2023-04-01 09:12:24,2023-04-01 09:12:24,0.001s,PASSED
+s = toAbsolutePath().toString(),,,,2023-04-01 09:12:24,2023-04-01 09:12:24,0.002s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 09:12:24,2023-04-01 09:12:24,0.001s,PASSED
+"s = s + ""\Data Files\APK Android\SampleAndroidApp-LoginTes_4.0_Apkpure.apk""",,,,2023-04-01 09:12:24,2023-04-01 09:12:24,0.001s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 09:12:24,2023-04-01 09:12:24,0.001s,PASSED
+"startApplication(s, false)",,,,2023-04-01 09:12:24,2023-04-01 09:12:38,13.662s,PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-04-01 09:12:38,2023-04-01 09:12:43,5.013s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_email""), email_real_mobile, 10)",,,,2023-04-01 09:12:43,2023-04-01 09:12:44,1.498s,PASSED
+"setEncryptedText(findTestObject(""MOBILE OBJECT/Register/txt_add_password""), ""7ZTatM+q3vAyZQd2ps7zRg=="", 10)",,,,2023-04-01 09:12:44,2023-04-01 09:12:45,1.233s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Login/btn_login""), 10)",,,,2023-04-01 09:12:45,2023-04-01 09:12:46,0.716s,PASSED

@@ -1,5 +1,6 @@
 # SURPLUS
 Surplus Challange
+<<<<<<< HEAD
 
 Installation (pre-requisites)
 What things you need to install the software and how to install them
@@ -29,3 +30,5 @@ To generate HTML report should running the test suite, and report will save on "
 **NOTE**
 Please note that the android apk is included as part of this project (in the Data file folder)
 Please update your Katalon WebDriver, The reason for inclusion is because the version of the included katalon browser driver must match your browser version 
+=======
+>>>>>>> ae7a381ae9ea56155a515d6a2cbcf221c8861baa

@@ -1,0 +1,165 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test Suite Mobile,,,,2023-04-01 11:27:38,2023-04-01 11:32:04,4m - 25.847s,PASSED
+,,,,,,,
+Test Cases/Negative Case Mobile - Register - Email has been taken,,,,2023-04-01 11:27:38,2023-04-01 11:28:36,57.700s,PASSED
+faker = new com.github.javafaker.Faker(),,,,2023-04-01 11:27:39,2023-04-01 11:27:40,0.038s,PASSED
+firstName = name().firstName(),,,,2023-04-01 11:27:40,2023-04-01 11:27:40,0.500s,PASSED
+name = firstName,,,,2023-04-01 11:27:40,2023-04-01 11:27:41,0.817s,PASSED
+"currentRelativePath = Paths.get("""")",,,,2023-04-01 11:27:41,2023-04-01 11:27:41,0.031s,PASSED
+s = toAbsolutePath().toString(),,,,2023-04-01 11:27:41,2023-04-01 11:27:41,0.071s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 11:27:41,2023-04-01 11:27:41,0.049s,PASSED
+"s = s + ""\Data Files\APK Android\SampleAndroidApp-LoginTes_4.0_Apkpure.apk""",,,,2023-04-01 11:27:41,2023-04-01 11:27:41,0.002s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 11:27:41,2023-04-01 11:27:41,0.002s,PASSED
+"startApplication(s, false)",,,,2023-04-01 11:27:41,2023-04-01 11:28:20,38.530s,PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-04-01 11:28:20,2023-04-01 11:28:25,5.185s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/lbl_createAccount""), 10)",,,,2023-04-01 11:28:25,2023-04-01 11:28:28,3.042s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_name""), firstName, 10)",,,,2023-04-01 11:28:28,2023-04-01 11:28:30,2.023s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_email""), ""sopigp@gmail.com"", 10)",,,,2023-04-01 11:28:30,2023-04-01 11:28:31,1.528s,PASSED
+"setEncryptedText(findTestObject(""MOBILE OBJECT/Register/txt_add_password""), ""7ZTatM+q3vAyZQd2ps7zRg=="", 10)",,,,2023-04-01 11:28:31,2023-04-01 11:28:33,1.558s,PASSED
+"setEncryptedText(findTestObject(""MOBILE OBJECT/Register/txt_add_confirmPassword""), ""7ZTatM+q3vAyZQd2ps7zRg=="", 10)",,,,2023-04-01 11:28:33,2023-04-01 11:28:34,1.496s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/btn_register""), 10)",,,,2023-04-01 11:28:34,2023-04-01 11:28:35,0.766s,PASSED
+pressBack(),,,,2023-04-01 11:28:35,2023-04-01 11:28:36,0.775s,PASSED
+,,,,,,,
+Test Cases/Negative Case Mobile - Register - Empty Value,,,,2023-04-01 11:28:36,2023-04-01 11:29:43,1m - 7.126s,PASSED
+faker = new com.github.javafaker.Faker(),,,,2023-04-01 11:28:37,2023-04-01 11:28:37,0.003s,PASSED
+firstName = name().firstName(),,,,2023-04-01 11:28:37,2023-04-01 11:28:37,0.079s,PASSED
+name = firstName,,,,2023-04-01 11:28:37,2023-04-01 11:28:37,0.001s,PASSED
+"email = surplusKeywords.RandomEmail.getEmail(""emailUser"", ""gmail.com"")",,,,2023-04-01 11:28:37,2023-04-01 11:28:37,0.037s,PASSED
+email = email,,,,2023-04-01 11:28:37,2023-04-01 11:28:37,0.001s,PASSED
+out.println(email),,,,2023-04-01 11:28:37,2023-04-01 11:28:37,0.001s,PASSED
+"currentRelativePath = Paths.get("""")",,,,2023-04-01 11:28:37,2023-04-01 11:28:37,0.002s,PASSED
+s = toAbsolutePath().toString(),,,,2023-04-01 11:28:37,2023-04-01 11:28:37,0.002s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 11:28:37,2023-04-01 11:28:37,0.001s,PASSED
+"s = s + ""\Data Files\APK Android\SampleAndroidApp-LoginTes_4.0_Apkpure.apk""",,,,2023-04-01 11:28:37,2023-04-01 11:28:37,0.001s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 11:28:37,2023-04-01 11:28:37,0.002s,PASSED
+"startApplication(s, false)",,,,2023-04-01 11:28:37,2023-04-01 11:28:54,16.319s,PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-04-01 11:28:54,2023-04-01 11:28:59,5.008s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/lbl_createAccount""), 10)",,,,2023-04-01 11:28:59,2023-04-01 11:29:02,2.956s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_name""), """", 0)",,,,2023-04-01 11:29:02,2023-04-01 11:29:04,2.279s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_email""), """", 0)",,,,2023-04-01 11:29:04,2023-04-01 11:29:05,1.506s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_password""), """", 0)",,,,2023-04-01 11:29:05,2023-04-01 11:29:07,1.299s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_confirmPassword""), """", 0)",,,,2023-04-01 11:29:07,2023-04-01 11:29:08,1.572s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/btn_register""), 10)",,,,2023-04-01 11:29:08,2023-04-01 11:29:09,0.961s,PASSED
+"verifyElementVisible(findTestObject(""MOBILE OBJECT/errorMessage_name""), 10)",,,,2023-04-01 11:29:09,2023-04-01 11:29:11,1.183s,PASSED
+"errorMessageName = getText(findTestObject(""MOBILE OBJECT/errorMessage_name""), 10)",,,,2023-04-01 11:29:11,2023-04-01 11:29:11,0.621s,PASSED
+"verifyMatch(errorMessageName, ""Enter Full Name"", false)",,,,2023-04-01 11:29:11,2023-04-01 11:29:11,0.024s,PASSED
+pressBack(),,,,2023-04-01 11:29:11,2023-04-01 11:29:11,0.279s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/lbl_createAccount""), 10)",,,,2023-04-01 11:29:11,2023-04-01 11:29:13,1.823s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_name""), firstName, 10)",,,,2023-04-01 11:29:13,2023-04-01 11:29:16,2.275s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_email""), """", 0)",,,,2023-04-01 11:29:16,2023-04-01 11:29:17,1.503s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_password""), """", 0)",,,,2023-04-01 11:29:17,2023-04-01 11:29:19,1.480s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_confirmPassword""), """", 0)",,,,2023-04-01 11:29:19,2023-04-01 11:29:20,1.433s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/btn_register""), 10)",,,,2023-04-01 11:29:20,2023-04-01 11:29:21,1.006s,PASSED
+"verifyElementVisible(findTestObject(""MOBILE OBJECT/errorMessage_email""), 10)",,,,2023-04-01 11:29:21,2023-04-01 11:29:22,1.153s,PASSED
+"errorMessageEmail = getText(findTestObject(""MOBILE OBJECT/errorMessage_email""), 10)",,,,2023-04-01 11:29:22,2023-04-01 11:29:23,0.434s,PASSED
+"verifyMatch(errorMessageEmail, ""Enter Valid Email"", false)",,,,2023-04-01 11:29:23,2023-04-01 11:29:23,0.004s,PASSED
+pressBack(),,,,2023-04-01 11:29:23,2023-04-01 11:29:23,0.202s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/lbl_createAccount""), 10)",,,,2023-04-01 11:29:23,2023-04-01 11:29:24,1.467s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_name""), firstName, 10)",,,,2023-04-01 11:29:24,2023-04-01 11:29:26,1.668s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_email""), email, 10)",,,,2023-04-01 11:29:26,2023-04-01 11:29:28,1.683s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_password""), """", 0)",,,,2023-04-01 11:29:28,2023-04-01 11:29:29,1.283s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_confirmPassword""), """", 0)",,,,2023-04-01 11:29:29,2023-04-01 11:29:30,1.507s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/btn_register""), 10)",,,,2023-04-01 11:29:30,2023-04-01 11:29:31,0.849s,PASSED
+"verifyElementVisible(findTestObject(""MOBILE OBJECT/errorMessage_password""), 10)",,,,2023-04-01 11:29:31,2023-04-01 11:29:32,1.120s,PASSED
+"errorMessagePassword = getText(findTestObject(""MOBILE OBJECT/errorMessage_password""), 10)",,,,2023-04-01 11:29:32,2023-04-01 11:29:33,0.466s,PASSED
+"verifyMatch(errorMessagePassword, ""Enter Password"", false)",,,,2023-04-01 11:29:33,2023-04-01 11:29:33,0.004s,PASSED
+pressBack(),,,,2023-04-01 11:29:33,2023-04-01 11:29:33,0.190s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/lbl_createAccount""), 10)",,,,2023-04-01 11:29:33,2023-04-01 11:29:34,1.491s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_name""), firstName, 10)",,,,2023-04-01 11:29:34,2023-04-01 11:29:36,1.725s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_email""), email, 10)",,,,2023-04-01 11:29:36,2023-04-01 11:29:38,1.386s,PASSED
+"setEncryptedText(findTestObject(""MOBILE OBJECT/Register/txt_add_password""), ""7ZTatM+q3vAyZQd2ps7zRg=="", 10)",,,,2023-04-01 11:29:38,2023-04-01 11:29:39,1.499s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_confirmPassword""), """", 0)",,,,2023-04-01 11:29:39,2023-04-01 11:29:41,1.406s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/btn_register""), 10)",,,,2023-04-01 11:29:41,2023-04-01 11:29:41,0.916s,PASSED
+"verifyElementVisible(findTestObject(""MOBILE OBJECT/errorMessage_confirmPassword""), 10)",,,,2023-04-01 11:29:41,2023-04-01 11:29:43,1.107s,PASSED
+"errorMessageConfirmPassword = getText(findTestObject(""MOBILE OBJECT/errorMessage_confirmPassword""), 10)",,,,2023-04-01 11:29:43,2023-04-01 11:29:43,0.330s,PASSED
+"verifyMatch(errorMessageConfirmPassword, ""Password Does Not Matches"", false)",,,,2023-04-01 11:29:43,2023-04-01 11:29:43,0.004s,PASSED
+pressBack(),,,,2023-04-01 11:29:43,2023-04-01 11:29:43,0.201s,PASSED
+,,,,,,,
+Test Cases/Negative Case Mobile - Register - Invalid Email,,,,2023-04-01 11:29:43,2023-04-01 11:30:17,33.609s,PASSED
+faker = new com.github.javafaker.Faker(),,,,2023-04-01 11:29:44,2023-04-01 11:29:44,0.003s,PASSED
+firstName = name().firstName(),,,,2023-04-01 11:29:44,2023-04-01 11:29:44,0.044s,PASSED
+name = firstName,,,,2023-04-01 11:29:44,2023-04-01 11:29:44,0.000s,PASSED
+"email = surplusKeywords.RandomEmail.getEmail(""emailUser"", ""gmail.com"")",,,,2023-04-01 11:29:44,2023-04-01 11:29:44,0.001s,PASSED
+email = email,,,,2023-04-01 11:29:44,2023-04-01 11:29:44,0.002s,PASSED
+out.println(email),,,,2023-04-01 11:29:44,2023-04-01 11:29:44,0.002s,PASSED
+"currentRelativePath = Paths.get("""")",,,,2023-04-01 11:29:44,2023-04-01 11:29:44,0.002s,PASSED
+s = toAbsolutePath().toString(),,,,2023-04-01 11:29:44,2023-04-01 11:29:44,0.001s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 11:29:44,2023-04-01 11:29:44,0.002s,PASSED
+"s = s + ""\Data Files\APK Android\SampleAndroidApp-LoginTes_4.0_Apkpure.apk""",,,,2023-04-01 11:29:44,2023-04-01 11:29:44,0.001s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 11:29:44,2023-04-01 11:29:44,0.001s,PASSED
+"startApplication(s, false)",,,,2023-04-01 11:29:44,2023-04-01 11:30:00,15.650s,PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-04-01 11:30:00,2023-04-01 11:30:05,5.017s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/lbl_createAccount""), 10)",,,,2023-04-01 11:30:05,2023-04-01 11:30:07,2.317s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_name""), firstName, 10)",,,,2023-04-01 11:30:07,2023-04-01 11:30:09,2.067s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_email""), ""sopigp.com"", 10)",,,,2023-04-01 11:30:09,2023-04-01 11:30:11,1.636s,PASSED
+"setEncryptedText(findTestObject(""MOBILE OBJECT/Register/txt_add_password""), ""7ZTatM+q3vAyZQd2ps7zRg=="", 10)",,,,2023-04-01 11:30:11,2023-04-01 11:30:12,1.419s,PASSED
+"setEncryptedText(findTestObject(""MOBILE OBJECT/Register/txt_add_confirmPassword""), ""7ZTatM+q3vAyZQd2ps7zRg=="", 10)",,,,2023-04-01 11:30:12,2023-04-01 11:30:14,1.539s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/btn_register""), 10)",,,,2023-04-01 11:30:14,2023-04-01 11:30:15,1.831s,PASSED
+"verifyElementVisible(findTestObject(""MOBILE OBJECT/errorMessage_email""), 10)",,,,2023-04-01 11:30:15,2023-04-01 11:30:16,0.622s,PASSED
+"errorMessageEmail = getText(findTestObject(""MOBILE OBJECT/errorMessage_email""), 10)",,,,2023-04-01 11:30:16,2023-04-01 11:30:16,0.472s,PASSED
+"verifyMatch(errorMessageEmail, ""Enter Valid Email"", false)",,,,2023-04-01 11:30:16,2023-04-01 11:30:16,0.005s,PASSED
+pressBack(),,,,2023-04-01 11:30:16,2023-04-01 11:30:17,0.212s,PASSED
+,,,,,,,
+Test Cases/Negative Case Mobile - Register - Max Characters,,,,2023-04-01 11:30:17,2023-04-01 11:30:51,34.267s,PASSED
+randomStringName = RandomStringUtils.randomAlphabetic(100),,,,2023-04-01 11:30:18,2023-04-01 11:30:18,0.027s,PASSED
+faker = new com.github.javafaker.Faker(),,,,2023-04-01 11:30:18,2023-04-01 11:30:18,0.003s,PASSED
+firstName = name().firstName(),,,,2023-04-01 11:30:18,2023-04-01 11:30:18,0.061s,PASSED
+name = firstName,,,,2023-04-01 11:30:18,2023-04-01 11:30:18,0.001s,PASSED
+"email = surplusKeywords.RandomEmail.getEmail(""emailUser"", ""gmail.com"")",,,,2023-04-01 11:30:18,2023-04-01 11:30:18,0.002s,PASSED
+email = email,,,,2023-04-01 11:30:18,2023-04-01 11:30:18,0.001s,PASSED
+out.println(email),,,,2023-04-01 11:30:18,2023-04-01 11:30:18,0.001s,PASSED
+"currentRelativePath = Paths.get("""")",,,,2023-04-01 11:30:18,2023-04-01 11:30:18,0.001s,PASSED
+s = toAbsolutePath().toString(),,,,2023-04-01 11:30:18,2023-04-01 11:30:18,0.001s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 11:30:18,2023-04-01 11:30:18,0.002s,PASSED
+"s = s + ""\Data Files\APK Android\SampleAndroidApp-LoginTes_4.0_Apkpure.apk""",,,,2023-04-01 11:30:18,2023-04-01 11:30:18,0.001s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 11:30:18,2023-04-01 11:30:18,0.002s,PASSED
+"startApplication(s, false)",,,,2023-04-01 11:30:18,2023-04-01 11:30:34,15.984s,PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-04-01 11:30:34,2023-04-01 11:30:39,5.024s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/lbl_createAccount""), 10)",,,,2023-04-01 11:30:39,2023-04-01 11:30:42,2.841s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_name""), randomStringName, 10)",,,,2023-04-01 11:30:42,2023-04-01 11:30:44,2.136s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_email""), email, 10)",,,,2023-04-01 11:30:44,2023-04-01 11:30:46,1.694s,PASSED
+"setEncryptedText(findTestObject(""MOBILE OBJECT/Register/txt_add_password""), ""7ZTatM+q3vAyZQd2ps7zRg=="", 10)",,,,2023-04-01 11:30:46,2023-04-01 11:30:47,1.563s,PASSED
+"setEncryptedText(findTestObject(""MOBILE OBJECT/Register/txt_add_confirmPassword""), ""7ZTatM+q3vAyZQd2ps7zRg=="", 10)",,,,2023-04-01 11:30:47,2023-04-01 11:30:49,1.689s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/btn_register""), 10)",,,,2023-04-01 11:30:49,2023-04-01 11:30:50,1.068s,PASSED
+pressBack(),,,,2023-04-01 11:30:50,2023-04-01 11:30:51,0.991s,PASSED
+,,,,,,,
+Test Cases/Negative Case Mobile - Register - Min Characters,,,,2023-04-01 11:30:51,2023-04-01 11:31:24,32.994s,PASSED
+"currentRelativePath = Paths.get("""")",,,,2023-04-01 11:30:52,2023-04-01 11:30:52,0.003s,PASSED
+s = toAbsolutePath().toString(),,,,2023-04-01 11:30:52,2023-04-01 11:30:52,0.004s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 11:30:52,2023-04-01 11:30:52,0.003s,PASSED
+"s = s + ""\Data Files\APK Android\SampleAndroidApp-LoginTes_4.0_Apkpure.apk""",,,,2023-04-01 11:30:52,2023-04-01 11:30:52,0.001s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 11:30:52,2023-04-01 11:30:52,0.001s,PASSED
+"startApplication(s, false)",,,,2023-04-01 11:30:52,2023-04-01 11:31:07,15.094s,PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-04-01 11:31:07,2023-04-01 11:31:12,5.018s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/lbl_createAccount""), 10)",,,,2023-04-01 11:31:12,2023-04-01 11:31:15,2.846s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_name""), ""a"", 10)",,,,2023-04-01 11:31:15,2023-04-01 11:31:17,1.903s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_email""), ""a@gmail.com"", 10)",,,,2023-04-01 11:31:17,2023-04-01 11:31:19,1.664s,PASSED
+"setEncryptedText(findTestObject(""MOBILE OBJECT/Register/txt_add_password""), ""J7R4ejOak4Y="", 10)",,,,2023-04-01 11:31:19,2023-04-01 11:31:21,1.673s,PASSED
+"setEncryptedText(findTestObject(""MOBILE OBJECT/Register/txt_add_confirmPassword""), ""J7R4ejOak4Y="", 10)",,,,2023-04-01 11:31:21,2023-04-01 11:31:22,1.474s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/btn_register""), 10)",,,,2023-04-01 11:31:22,2023-04-01 11:31:23,1.074s,PASSED
+pressBack(),,,,2023-04-01 11:31:23,2023-04-01 11:31:24,0.825s,PASSED
+,,,,,,,
+Test Cases/Negative Case Mobile - Register - Password Does Not Matches,,,,2023-04-01 11:31:24,2023-04-01 11:32:04,39.589s,PASSED
+faker = new com.github.javafaker.Faker(),,,,2023-04-01 11:31:25,2023-04-01 11:31:25,0.001s,PASSED
+firstName = name().firstName(),,,,2023-04-01 11:31:25,2023-04-01 11:31:25,0.024s,PASSED
+name = firstName,,,,2023-04-01 11:31:25,2023-04-01 11:31:25,0.001s,PASSED
+"email = surplusKeywords.RandomEmail.getEmail(""emailUser"", ""gmail.com"")",,,,2023-04-01 11:31:25,2023-04-01 11:31:25,0.003s,PASSED
+email = email,,,,2023-04-01 11:31:25,2023-04-01 11:31:25,0.000s,PASSED
+out.println(email),,,,2023-04-01 11:31:25,2023-04-01 11:31:25,0.001s,PASSED
+"currentRelativePath = Paths.get("""")",,,,2023-04-01 11:31:25,2023-04-01 11:31:25,0.001s,PASSED
+s = toAbsolutePath().toString(),,,,2023-04-01 11:31:25,2023-04-01 11:31:25,0.000s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 11:31:25,2023-04-01 11:31:25,0.000s,PASSED
+"s = s + ""\Data Files\APK Android\SampleAndroidApp-LoginTes_4.0_Apkpure.apk""",,,,2023-04-01 11:31:25,2023-04-01 11:31:25,0.002s,PASSED
+"out.println(""Current absolute path is: "" + s)",,,,2023-04-01 11:31:25,2023-04-01 11:31:25,0.002s,PASSED
+"startApplication(s, false)",,,,2023-04-01 11:31:25,2023-04-01 11:31:46,21.099s,PASSED
+"delay(5, STOP_ON_FAILURE)",,,,2023-04-01 11:31:46,2023-04-01 11:31:51,5.017s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/lbl_createAccount""), 10)",,,,2023-04-01 11:31:51,2023-04-01 11:31:53,2.067s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_name""), firstName, 10)",,,,2023-04-01 11:31:53,2023-04-01 11:31:55,2.095s,PASSED
+"setText(findTestObject(""MOBILE OBJECT/Register/txt_add_email""), email, 10)",,,,2023-04-01 11:31:55,2023-04-01 11:31:57,1.751s,PASSED
+"setEncryptedText(findTestObject(""MOBILE OBJECT/Register/txt_add_password""), ""7ZTatM+q3vAyZQd2ps7zRg=="", 10)",,,,2023-04-01 11:31:57,2023-04-01 11:31:58,1.730s,PASSED
+"setEncryptedText(findTestObject(""MOBILE OBJECT/Register/txt_add_confirmPassword""), ""7ZTatM+q3vBgFR2tafRiBEjvq10dNwjr"", 10)",,,,2023-04-01 11:31:58,2023-04-01 11:32:00,1.622s,PASSED
+"tap(findTestObject(""MOBILE OBJECT/Register/btn_register""), 10)",,,,2023-04-01 11:32:00,2023-04-01 11:32:02,1.439s,PASSED
+"verifyElementVisible(findTestObject(""MOBILE OBJECT/errorMessage_confirmPassword""), 10)",,,,2023-04-01 11:32:02,2023-04-01 11:32:03,1.145s,PASSED
+"errorMessageConfirmPassword = getText(findTestObject(""MOBILE OBJECT/errorMessage_confirmPassword""), 10)",,,,2023-04-01 11:32:03,2023-04-01 11:32:03,0.581s,PASSED
+"verifyMatch(errorMessageConfirmPassword, ""Password Does Not Matches"", false)",,,,2023-04-01 11:32:03,2023-04-01 11:32:03,0.019s,PASSED
+pressBack(),,,,2023-04-01 11:32:03,2023-04-01 11:32:04,0.257s,PASSED

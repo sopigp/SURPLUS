@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test Suite API,,,,2023-03-31 15:49:56,2023-03-31 15:50:01,4.244s,PASSED
+,,,,,,,
+Test Cases/Create New Post,,,,2023-03-31 15:49:57,2023-03-31 15:50:00,3.461s,PASSED
+"response = sendRequestAndVerify(findTestObject(""API OBJECTS/Create New Post"", [""url"":url, ""title"":title, ""body"":body, ""userId"":userId]))",,,,2023-03-31 15:49:57,2023-03-31 15:50:00,2.961s,PASSED
+out.println(response),,,,2023-03-31 15:50:00,2023-03-31 15:50:00,0.011s,PASSED
+"verifyElementPropertyValue(response, ""title"", title)",,,,2023-03-31 15:50:00,2023-03-31 15:50:00,0.059s,PASSED
+"verifyElementPropertyValue(response, ""body"", body)",,,,2023-03-31 15:50:00,2023-03-31 15:50:00,0.028s,PASSED
+"verifyElementPropertyValue(response, ""userId"", userId)",,,,2023-03-31 15:50:00,2023-03-31 15:50:00,0.017s,PASSED
+"verifyElementPropertyValue(response, ""id"", ""101"")",,,,2023-03-31 15:50:00,2023-03-31 15:50:00,0.012s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,2023-03-31 15:50:00,2023-03-31 15:50:00,0.025s,PASSED
+,,,,,,,
+Test Cases/Get All Post,,,,2023-03-31 15:50:00,2023-03-31 15:50:01,0.515s,PASSED
+"response1 = sendRequestAndVerify(findTestObject(""API OBJECTS/Get All Post"", [""url"":url]))",,,,2023-03-31 15:50:00,2023-03-31 15:50:01,0.305s,PASSED
+out.println(response1),,,,2023-03-31 15:50:01,2023-03-31 15:50:01,0.000s,PASSED

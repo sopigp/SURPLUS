@@ -1,0 +1,8 @@
+{"testCaseName":"Test Cases/Mobile - Register","testCaseId":"Test Cases/Mobile - Register","iterationVariableName":""}
+{"testCaseName":"Test Cases/Mobile - Login","testCaseId":"Test Cases/Mobile - Login","iterationVariableName":""}
+{"testCaseName":"Test Cases/Negative Case Mobile - Register - Email has been taken","testCaseId":"Test Cases/Negative Case Mobile - Register - Email has been taken","iterationVariableName":""}
+{"testCaseName":"Test Cases/Negative Case Mobile - Register - Empty Value","testCaseId":"Test Cases/Negative Case Mobile - Register - Empty Value","iterationVariableName":""}
+{"testCaseName":"Test Cases/Negative Case Mobile - Register - Invalid Email","testCaseId":"Test Cases/Negative Case Mobile - Register - Invalid Email","iterationVariableName":""}
+{"testCaseName":"Test Cases/Negative Case Mobile - Register - Max Characters","testCaseId":"Test Cases/Negative Case Mobile - Register - Max Characters","iterationVariableName":""}
+{"testCaseName":"Test Cases/Negative Case Mobile - Register - Min Characters","testCaseId":"Test Cases/Negative Case Mobile - Register - Min Characters","iterationVariableName":""}
+{"testCaseName":"Test Cases/Negative Case Mobile - Register - Password Does Not Matches","testCaseId":"Test Cases/Negative Case Mobile - Register - Password Does Not Matches","iterationVariableName":""}

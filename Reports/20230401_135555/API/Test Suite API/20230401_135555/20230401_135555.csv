@@ -1,0 +1,29 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test Suite API,,,,2023-04-01 13:56:16,2023-04-01 13:56:29,12.518s,PASSED
+,,,,,,,
+Test Cases/API - Create New Post,,,,2023-04-01 13:56:17,2023-04-01 13:56:27,9.308s,PASSED
+"response = sendRequestAndVerify(findTestObject(""API OBJECTS/Create New Post"", [""url"":url, ""title"":title, ""body"":body, ""userId"":userId]))",,,,2023-04-01 13:56:19,2023-04-01 13:56:26,7.318s,PASSED
+out.println(response),,,,2023-04-01 13:56:26,2023-04-01 13:56:26,0.038s,PASSED
+"verifyElementPropertyValue(response, ""title"", title)",,,,2023-04-01 13:56:26,2023-04-01 13:56:26,0.145s,PASSED
+"verifyElementPropertyValue(response, ""body"", body)",,,,2023-04-01 13:56:26,2023-04-01 13:56:26,0.038s,PASSED
+"verifyElementPropertyValue(response, ""userId"", userId)",,,,2023-04-01 13:56:26,2023-04-01 13:56:26,0.052s,PASSED
+"verifyElementPropertyValue(response, ""id"", ""101"")",,,,2023-04-01 13:56:26,2023-04-01 13:56:27,0.058s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,2023-04-01 13:56:27,2023-04-01 13:56:27,0.033s,PASSED
+"response = ""{""title"": ""Pentingnya Pendidikan Untuk Tingkatkan Kualitas Hidup"", ""body"": ""Pendidikan yang baik tentu saja sangat besar manfaatnya bagi kehidupan seseorang. Dan ada juga pepatah “tuntutlah ilmu setinggi langit” artinya kita harus belajar setinggi-tingginya untuk meningkatkan ajang kualitas hidup meski di rumah saja."", ""userId"": 100, ""id"": 101}""",,,,2023-04-01 13:56:27,2023-04-01 13:56:27,0.002s,PASSED
+"expectedTitle = ""Pentingnya Pendidikan Untuk Tingkatkan Kualitas Hidup""",,,,2023-04-01 13:56:27,2023-04-01 13:56:27,0.000s,PASSED
+"expectedBody = ""Pendidikan yang baik tentu saja sangat besar manfaatnya bagi kehidupan seseorang. Dan ada juga pepatah “tuntutlah ilmu setinggi langit” artinya kita harus belajar setinggi-tingginya untuk meningkatkan ajang kualitas hidup meski di rumah saja.""",,,,2023-04-01 13:56:27,2023-04-01 13:56:27,0.003s,PASSED
+expectedUserId = 100,,,,2023-04-01 13:56:27,2023-04-01 13:56:27,0.001s,PASSED
+expectedId = 101,,,,2023-04-01 13:56:27,2023-04-01 13:56:27,0.003s,PASSED
+jsonSlurper = new groovy.json.JsonSlurper(),,,,2023-04-01 13:56:27,2023-04-01 13:56:27,0.005s,PASSED
+jsonResponse = jsonSlurper.parseText(response),,,,2023-04-01 13:56:27,2023-04-01 13:56:27,0.006s,PASSED
+assert expectedTitle == title,,,,2023-04-01 13:56:27,2023-04-01 13:56:27,0.007s,PASSED
+assert expectedBody == body,,,,2023-04-01 13:56:27,2023-04-01 13:56:27,0.006s,PASSED
+assert expectedUserId == userId,,,,2023-04-01 13:56:27,2023-04-01 13:56:27,0.004s,PASSED
+assert expectedId == id,,,,2023-04-01 13:56:27,2023-04-01 13:56:27,0.000s,PASSED
+,,,,,,,
+Test Cases/API - Get All Post,,,,2023-04-01 13:56:27,2023-04-01 13:56:29,2.096s,PASSED
+"response = sendRequestAndVerify(findTestObject(""API OBJECTS/Get All Post"", [""url"":url]))",,,,2023-04-01 13:56:27,2023-04-01 13:56:29,1.303s,PASSED
+out.println(response),,,,2023-04-01 13:56:29,2023-04-01 13:56:29,0.003s,PASSED
+jsonResponse = JsonSlurper().parseText(response.getResponseText()),,,,2023-04-01 13:56:29,2023-04-01 13:56:29,0.018s,PASSED
+jsonResponse.each({ java.lang.Object item -> ... }),,,,2023-04-01 13:56:29,2023-04-01 13:56:29,0.006s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-04-01 13:56:29,2023-04-01 13:56:29,0.016s,PASSED
